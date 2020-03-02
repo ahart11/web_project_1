@@ -1,3 +1,30 @@
+/*.page {
+    min-width: 1100px;
+    max-width: 1600px;
+    margin: 0 auto;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.header {
+    height: 100vh;
+    min-height: 600px;
+    max-height: 756px;
+}
+
+.header__square-pic {
+    height: 568px;
+    width: 568px;
+}
+
+.table__cell_theme_dark {
+    width: 200px;
+    color: white;
+    margin-right: 0;
+    margin-top: 80px;
+}
+*/
+
+
 .page {
     min-width: 1100px;
     /* we don't know how to make mobile versions of websites yet, */
@@ -10,20 +37,31 @@
 }
 
 .header {
+        
     height: 100vh;
     min-height: 600px;
     max-height: 756px;
     display: flex;
     position: relative;
     background-color: #F2F2F2;
-    overflow: hidden;
-    
-    
-
-
-    
-    /* parameters for the header section */
+   overflow: hidden;
 }
+.header__title {
+
+    width: 730px;
+    margin-left: 64px; 
+    position: relative;
+    line-height: 96px; 
+    font-size: 102px; 
+    font-weight: bold;
+    top: 10%;
+    z-index: 1;
+    bottom: 30px;
+        /* remove z-index */
+}
+
+
+
 
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
 
@@ -43,39 +81,33 @@
     overflow: hidden;   
     
 }
-.header__title {
-
-    width: 730px;
-    margin-left: 64px; 
-    position: relative;
-    line-height: 96px; 
-    font-size: 102px; 
-    font-weight: bold;
-    top: 10%;
-    z-index: 1;
-    
-        /* remove z-index */
-
-}
-.header__subtitle {
+.header__subtitle{
     
     left: 64px;
-    bottom: 30px;
+    top: 500px;
     width: 388px;
+    height: 25px;
     z-index: 1;
-    position: relative;
-    line-height: 25px; 
-    font-size: 18px; 
+    position: absolute;
+    line-height: 25px;
+    font-size: 18px;
     font-weight: normal;
-    display: flex;
     padding: 0;
     margin: 0;
-    overflow: hidden;
 }
 .header__link {
-    color: #2F80ED;
+color: #2F80ED;
+    left: 64px;
+    top: 550px;
+    z-index: 1;
+    position: absolute;
+    line-height: 25px;
+    font-weight: normal;
+
 }
-.header__main-illustration {
+
+
+/*.header__main-illustration {
     position: absolute;
     z-index: 1;
     height: 608px;
@@ -84,24 +116,26 @@
     left: 100%;
     padding: 0;
     
-}
+}*/
 .header__main-illustration-image {
+    position: absolute;
+    top:20px;
+    left:600px;
     height: 608px;
     width: 765px;
-    padding: 0;
-    
+    padding: 0; 
+    z-index: 1;
     
 }
-
 .header__square-pic {
-    position: absolute;
-    z-index: 1
-    top: 64px;
-    left: 100%;
+    
+position: absolute;
+    left: 800px;
     height: 568px;
     width: 568px;
     background-color: #2F80ED;
-    padding: 0;
+    top: 64px;    
+    
 }  
 .flex-row {
     display: flex;
@@ -132,9 +166,11 @@
   }
 .two-columns__paragraph { 
     line-height: 34px;
+    margin: 0px 0px 30px 0px;
     font-size: 24px;
-    font-style: normal;
+    font-weight: normal;
     min-width: 784px;
+    margin-bottom: 30px;
   }
 .two-columns__brief {
     width: 175px;
@@ -164,7 +200,7 @@
   
 .table {
     width: 1100px;
-    margin: auto;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-content: space-between;
@@ -173,7 +209,7 @@
   }
 .table__cell {
     width: 250px;
-    margin-top: 60px;
+    margin-bottom: 20px;
   }
   
 .section-title {
@@ -183,9 +219,7 @@
     text-align: center;
     width: 60%;
     align-self: center;
-    margin-top: 0;
-    margin-bottom: 0;
-    z-index: 2;
+    margin-bottom: 20px;
   }
   
 .section-subtitle {
@@ -195,9 +229,7 @@
     text-align: center;
     width: 60%;
     align-self: center;
-    margin-top: 20px;
-    margin-bottom: 0;
-    z-index: 2;
+    margin-bottom: 60px;
   }
   
 .table__heading {
@@ -205,15 +237,18 @@
     line-height: 1.15;
     font-size: 24px;
     font-weight: bold;
-    margin-top: 0;
   }
   
 .table__text {
     line-height: 1.2;
     font-size: 18px;
     font-style: normal;
-    margin-top: 20px;
   }  
+
+.second-half
+{
+    margin-top: 60px;
+}
   
 .feynman {
     padding-top: 100px;
@@ -236,6 +271,7 @@
     width: 770px;
     z-index: 1;
   }
+
   
 .feynman__subtitle {
     margin-top: 70px;
@@ -267,6 +303,29 @@
     display: flex;
     flex-direction: column;  
   }
+  
+    .section__title_theme-dark
+  {
+        text-align: center;
+        width: 60%;
+        align-self: center;
+        margin-bottom: 20px;
+        line-height: 69px;
+        font-size: 60px;
+        font-weight: bold;
+
+  }
+  .section__subtitle_theme-dark
+  {
+      text-align: center;
+        width: 60%;
+     align-self: center;
+     line-height: 34px;
+     font-size: 24px;
+     font-weight: normal;
+
+  }
+
 .kaufman__triangle {
     z-index: 0;
     background-image: url(../images/triangle.svg);
@@ -279,11 +338,21 @@
     overflow: hidden;
     
   }
+  .table_theme_dark
+  {
+      width: 1100px;
+      margin: 0 auto;
+  }
+  
+ .table_theme_dark_first_half
+ {
+     padding: 80px;
+ } 
 .table__cell_theme-dark {
     margin-right: 0;
-    margin-top: 80px;
     width: 200px;
     color: white; 
+    
   }
   
   
@@ -300,27 +369,19 @@
     padding-bottom: 40px;
     display: flex;
     flex-basis: 711px;
-    margin: auto; 
+    margin: 0 auto; 
     min-height: 252px;
     width: 90%;
     justify-content: space-between;
   }  
   
 .footer__column_content-copyright {
-    position: relative;
-    flex-basis: 711px;
-    z-index: 2;
+
   }
 .logo_place_footer {
     position: absolute;
-    z-index: 1;
-    background-image:url(../images/logo_white.png);
-    background-repeat: no-repeat;
-    background-size: contain;
     width: 183px;
     height: 35px;
-    top: 0;
-    left: 0;
   }
 .footer__link {
     font-size: 18px;
@@ -328,12 +389,16 @@
     line-height: 30px;
 
 }
-.footer__column-links {
-    padding: 0;
+.footer__column-links
+{
+    padding: 20px 0px 16px 0px;
 }
+.footer__column-links a {
+    text-decoration: none;
+}
+
+
   .footer__column-heading {
-    margin: 0;
-    margin-bottom: 20px;
     font-size: 18px;
     color: #FFFFFF;
     line-height: 45px;
@@ -343,12 +408,12 @@
     display: block;
 }
 .footer__author {
-    position: absolute;
     font-size: 18px;
     color: #4F4F4F;
-    left: 0;
-    bottom: 0;
+    bottom: -200px;
     line-height: 25px; 
+    position: relative;
+    padding: 18px;
   }
   .footer__social-icons {
       margin-right: 10px;
