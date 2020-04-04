@@ -4,18 +4,15 @@
     margin: 0 auto;
     font-family: 'Helvetica Neue', Arial, sans-serif;
 }
-
 .header {
     height: 100vh;
     min-height: 600px;
     max-height: 756px;
 }
-
 .header__square-pic {
     height: 568px;
     width: 568px;
 }
-
 .table__cell_theme_dark {
     width: 200px;
     color: white;
@@ -44,24 +41,39 @@
   background-color: #F2F2F2;
   overflow: hidden;
 }
+header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  /*min-height: 600px;*/
+  /*max-height: 756px;*/
+}
 .header__title {
 
   width: 730px;
-  margin-left: 64px; 
-  position: relative;
   line-height: 96px; 
   font-size: 102px; 
   font-weight: bold;
-  top: 10%;
+  top: 35%;
   z-index: 1;
   bottom: 30px;
-      /* remove z-index */
+  left: 64px;
+  z-index: 1;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+      
 }
 
 
 
 
+
 /* here we have two examples of selectors in order to remind you how to set styles for elements */
+.logo {
+
+}
 
 .logo_place_header {
   position: absolute;
@@ -71,25 +83,16 @@
   height: 31px;
   width: 154px;
   overflow: hidden;
-  height: 100vh;
 
   
-
-
-  
-}
-.logo_place_header-image {
-  height: 31px;
-  width: 154px; 
-  overflow: hidden;   
   
 }
 .header__subtitle{
   
   left: 64px;
-  top: 500px;
+  top: 550px;
   width: 388px;
-  height: 25px;
+  height: 55px;
   z-index: 1;
   position: absolute;
   line-height: 25px;
@@ -101,11 +104,12 @@
   display: flex;
   background-color: #F2F2F2;
   overflow: hidden;
+  
 }
 .header__link {
 color: #2F80ED;
   left: 64px;
-  top: 550px;
+  top: 600px;
   z-index: 1;
   position: absolute;
   line-height: 25px;
@@ -114,34 +118,35 @@ color: #2F80ED;
 }
 
 
-/*.header__main-illustration {
+.header__subtitle {
   position: absolute;
-  z-index: 1;
-  height: 608px;
-  width: 765px;
-  top: 100%;
-  left: 100%;
-  padding: 0;
-  
-}*/
+  left: 64px;
+  bottom: 30px;
+  width: 388px;
+  line-height: 25px;
+  font-size: 18px;
+}
+
 .header__main-illustration {
   position: absolute;
-  top:20px;
-  left:600px;
+  bottom: 0;
+  right: 0;
   height: 608px;
   width: 765px;
-  padding: 0; 
+  padding: 0;
   z-index: 1;
-  
 }
+
 .header__square-pic {
-  
-position: absolute;
-  left: 800px;
+
+  position: absolute;
+  right: 0;
+  top: 64px;
   height: 568px;
   width: 568px;
   background-color: #2F80ED;
-  top: 64px;    
+  top: 64px;
+ 
   
 }  
 .flex-row {
@@ -225,7 +230,9 @@ position: absolute;
   text-align: center;
   width: 60%;
   align-self: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+
+  
 }
 
 .section-subtitle {
@@ -236,7 +243,7 @@ position: absolute;
   width: 60%;
   align-self: center;
   margin-bottom: 60px;
-  
+
 }
 
 .table__heading {
@@ -314,27 +321,6 @@ position: absolute;
   flex-direction: column;  
 }
 
-  .section__title_theme_dark
-{
-      text-align: center;
-      width: 60%;
-      align-self: center;
-      margin-bottom: 20px;
-      line-height: 69px;
-      font-size: 60px;
-      font-weight: bold;
-
-}
-.section__subtitle_theme_dark
-{
-    text-align: center;
-      width: 60%;
-   align-self: center;
-   line-height: 34px;
-   font-size: 24px;
-   font-weight: normal;
-
-}
 
 .kaufman__triangle {
   z-index: 0;
@@ -350,9 +336,9 @@ position: absolute;
 }
 .table_theme_dark
 {
-    width: 1100px;
+    width: 1300px;
     margin: 0 auto;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .table_theme_dark_first_half
