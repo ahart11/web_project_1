@@ -1,33 +1,7 @@
-/*.page {
-    min-width: 1100px;
-    max-width: 1600px;
-    margin: 0 auto;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-}
-.header {
-    height: 100vh;
-    min-height: 600px;
-    max-height: 756px;
-}
-.header__square-pic {
-    height: 568px;
-    width: 568px;
-}
-.table__cell_theme_dark {
-    width: 200px;
-    color: white;
-    margin-right: 0;
-    margin-top: 80px;
-}*/
-
 .page {
   min-width: 1100px;
-  /* we don't know how to make mobile versions of websites yet, */
-  /* so here we've set a minimum page width */
   max-width: 1600px;
-  /* here we've set a maximum page width */
   margin: 0 auto;
-  /* this ensures that all content is centered on screens wider than 1600px */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
@@ -39,16 +13,9 @@
   display: flex;
   position: relative;
   background-color: #F2F2F2;
-  overflow: hidden;
+  
 }
-header {
-  position: relative;
-  display: flex;
-  align-items: center;
-  height: 100vh;
-  /*min-height: 600px;*/
-  /*max-height: 756px;*/
-}
+
 .header__title {
 
   width: 730px;
@@ -59,20 +26,10 @@ header {
   z-index: 1;
   bottom: 30px;
   left: 64px;
-  z-index: 1;
   position: absolute;
   padding: 0;
   margin: 0;
       
-}
-
-
-
-
-
-/* here we have two examples of selectors in order to remind you how to set styles for elements */
-.logo {
-
 }
 
 .logo_place_header {
@@ -82,7 +39,7 @@ header {
   z-index: 1;
   height: 31px;
   width: 154px;
-  overflow: hidden;
+  
 
   
   
@@ -90,7 +47,7 @@ header {
 .header__subtitle{
   
   left: 64px;
-  top: 550px;
+  top: 625px;
   width: 388px;
   height: 55px;
   z-index: 1;
@@ -103,29 +60,19 @@ header {
 
   display: flex;
   background-color: #F2F2F2;
-  overflow: hidden;
   
 }
 .header__link {
-color: #2F80ED;
+  color: #2F80ED;
   left: 64px;
-  top: 600px;
+  top: 675px;
   z-index: 1;
   position: absolute;
   line-height: 25px;
   font-weight: normal;
-
-}
-
-
-.header__subtitle {
-  position: absolute;
-  left: 64px;
-  bottom: 30px;
-  width: 388px;
-  line-height: 25px;
   font-size: 18px;
 }
+
 
 .header__main-illustration {
   position: absolute;
@@ -145,7 +92,7 @@ color: #2F80ED;
   height: 568px;
   width: 568px;
   background-color: #2F80ED;
-  top: 64px;
+  
  
   
 }  
@@ -315,7 +262,6 @@ color: #2F80ED;
   padding-bottom: 90px;
   color: white;
   background-color: #1F1F1F;	
-  overflow: hidden;
   position: relative;
   display: flex;
   flex-direction: column;  
@@ -330,28 +276,40 @@ color: #2F80ED;
   width: 877px;
   height: 877px;
   top: 0; 
-  right: -210px; 
-  overflow: hidden;
-  
-}
-.table_theme_dark
-{
-    width: 1300px;
-    margin: 0 auto;
-    flex-wrap: wrap;
+  right: -210px;  
 }
 
-.table_theme_dark_first_half
+.table_theme_dark
 {
-   padding: 80px;
-} 
-.table__cell_theme-dark {
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+
+.table__cell_theme_dark {
   margin-right: 0;
   width: 200px;
   color: white; 
-  
 }
 
+.section-title_theme_dark {
+  font-weight: bold;
+  line-height: 69px;
+  font-size: 60px;
+  text-align: center;
+  width: 60%;
+  align-self: center;
+  margin-bottom: 10px;
+}
+.section-subtitle_theme_dark {
+  font-size: 24px;
+  font-style: normal;
+  line-height: 34px;
+  text-align: center;
+  width: 60%;
+  align-self: center;
+  margin-bottom: 60px;
+}
 
 .footer {
   padding-right: 0;
@@ -370,47 +328,58 @@ color: #2F80ED;
   min-height: 252px;
   width: 90%;
   justify-content: space-between
-  
 }  
+
+
 .footer__column_content_info{
-  margin-left: 50%;
+  margin-left: 25%;
 
 }
 .footer__column_content_social{
-  margin-left: auto;
+  /*margin-left: auto;*/
 }
 .footer__column_content-copyright {
 
 }
+
 .logo_place_footer {
   position: absolute;
   width: 183px;
   height: 35px;
 }
+
+.footer__column-links li a {
+  padding: 20px 0px 16px 0px;
+  margin-left:-40px;
+  font-size: 18px;
+  line-height: 30px;
+  text-decoration: none;
+  color: #4F4F4F;
+}
+
+
+ul {
+  list-style-type: none;
+}
+
 .footer__link {
   font-size: 18px;
   color: #4F4F4F;
   line-height: 30px;
 
 }
-.footer__column-links
-{
-  padding: 20px 0px 16px 0px;
-}
-.footer__column-links a {
-  text-decoration: none;
-}
 
+.footer__list-item {
+  display: block;
+}
 
 .footer__column-heading {
   font-size: 18px;
   color: #FFFFFF;
-  line-height: 45px;
-   
+  margin-right: 70px;
+  line-height: 45px; 
 }
-.footer__list-item {
-  display: block;
-}
+
 .footer__author {
   font-size: 18px;
   color: #4F4F4F;
@@ -419,6 +388,7 @@ color: #2F80ED;
   position: relative;
   padding: 18px;
 }
+
 .footer__social-icons {
     margin-right: 10px;
 }
