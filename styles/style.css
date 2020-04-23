@@ -1,4 +1,24 @@
-/*these are just to help see the different areas*/
+@import url('cards/cards.css');
+@import url('description/description.css');
+@import url('digits/digits.css');
+@import url('feynman/feynman.css');
+@import url('footer/footer.css');
+@import url('header/header.css');
+@import url('kaufman/kaufman.css');
+@import url('khan/khan.css');
+@import url('logo/logo.css');
+@import url('oakley/oakley.css');
+@import url('page/page.css');
+@import url('rotation/rotation.css');
+@import url('resources/resources.css');
+@import url('section-title/section-title.css');
+@import url('section-subtitle/section-subtitle.css');
+@import url('techniques/techniques.css');
+@import url('table/table.css');
+@import url('two-columns/two-columns.css');
+@import url('video/video.css');
+
+/*to see the borders of things*/
 div {
   border: 2px solid red;
 }
@@ -77,7 +97,6 @@ a:hover {
   position: absolute;
   left: 64px;
   top: 30px;
-  z-index: 1;
   height: 31px;
   width: 154px;
   z-index: 1;
@@ -137,18 +156,6 @@ a:hover {
    
  }
   
-
-.flex-row {
-  display: flex;
-  flex-direction: row;
-}
-.flex-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: normal;
-  height: 100%;
-
-}
 /* DESCRIPTION SECTION*/
 
 .description {
@@ -193,29 +200,28 @@ a:hover {
 /*TECHNIQUES SECTION*/
 
 .techniques {
-  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 100px;
   align-items: center;
 }
 
 
 .cards {
-  width: 80%;
-  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  
+  width: 80%;
+  margin: 0 auto;
   
 }
 
 .cards__item {
-  list-style-type: none;
-  width: 240px;
-  margin: 60px 100px 0 0;
   text-align: center;
   align-items: flex-start;
+  list-style-type: none;
+  width: 240px;
+  margin: 60px 100px 0 0; 
 }
 
 
@@ -226,26 +232,27 @@ a:hover {
   border-radius: 50%;
   margin-left: 40px;
   margin-right: 40px;
-  border-radius: 90px;
+  /*border-radius: 90px;*/
 }
 
 .cards__title {
+  text-align: center;
+  align-self: flex-start;
   line-height: 1.15;
   font-size: 24px;
-  font-weight: bold;
   margin-top: 43px;
   margin-bottom: 0;
-  text-align: center;
-  align-self: flex-start
+  font-weight: bold;
 }
 
 .cards__description {
+  text-align: center;
   line-height: 23px;
   font-size: 18px;
   font-weight: normal;
   margin-top: 16px;
   margin-bottom: 0;
-  text-align: center;
+  
 }
 
 /* VIDEO SECTION */
@@ -256,10 +263,6 @@ a:hover {
   align-items: center;
 }
 
-.video .section-title {
-  line-height: 1.15;
-   
-}
 
 .video__iframes {
   display: flex;
@@ -270,8 +273,9 @@ a:hover {
 .video__iframe {
   margin-right: 20px;
   transform: translate(0, 50px);
+  width: 515px;
+  height: 316px;
 }
-
 
 
 .video__iframe iframe {
@@ -280,18 +284,21 @@ a:hover {
 
 
 
+
 /* OAKLEY SECTION */
 .oakley {
-  background-color: #F2F2F2;
   padding-top: 160px;
+  background-color: #F2F2F2;
+  
 }
 
 .two-colums__brief {
   font-size: 18px;
-  color: #2f80ed;
-  width: 175px;
   line-height: 1.2;
   font-weight: normal;
+  color: #2f80ed;
+  width: 175px;
+  
 }
 .two-colums__main-text {
   width: 80%;
@@ -299,9 +306,9 @@ a:hover {
   padding-bottom: 80px;
 }
 .two-colums__paragraph {
+  margin: 30px 0 0;
   line-height: 34px;
   font-size: 24px;
-  margin: 30px 0 0;
 }
 
 /* DIGITS SECTION */
@@ -370,25 +377,26 @@ a:hover {
 
 /* KHAN SECTION */
 .khan {
-  padding-top: 105px;
-  background-color: #F2F2F2;
-  margin: auto;
   display: block;
   justify-content: center;
   flex-wrap: wrap;
-  
+  padding-top: 105px;
+  background-color: #F2F2F2;
+  margin: auto;
 }
 
 .khan__container {
-  width: 80%;
   margin: 0 auto;
+  width: 80%;
+  
 }
 
 .khan__author {
+  margin: 0;
   line-height: 42px;
   font-size: 30px;
   font-weight: normal;
-  margin: 0;
+  
 }
 
 .khan__title {
@@ -399,28 +407,31 @@ a:hover {
 }
 
 .khan__quote {
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
   max-width: 790px;
   margin-top: 50px;
   margin-bottom: 36px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  
 }
 
 .khan__quote-author {
+  margin-top: 0;
+  margin-bottom: 10px;
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
-  margin-top: 0;
-  margin-bottom: 10px;
+  
 }
 
 .khan__quote-author-subline {
+  margin-top: 0;
+  margin-bottom: 68px;
   line-height: 1.15;
   font-size: 24px;
   font-weight: normal;
-  margin-top: 0;
-  margin-bottom: 68px;
+  
 }
 
 .khan__book-container {
@@ -428,11 +439,12 @@ a:hover {
 }
 
 .khan__buy-link {
+  text-decoration: none;
+  color: #2F80ED;
   line-height: 42px;
   font-size: 30px;
   font-weight: normal;
-  text-decoration: none;
-  color: #2F80ED;
+  
 }
 
 .khan__buy-link:hover {
@@ -440,9 +452,10 @@ a:hover {
 }
 
 .khan__book-pic {
+  margin-right: 20px;
   max-width: 620px;
   height: 608px;
-  margin-right: 20px;
+  
 }
 
 /* FEYNMAN SECTION */
@@ -516,7 +529,7 @@ a:hover {
   top: 20px;
   right: -210px;
   background-size: cover;
-  animation: triangle 20s linear infinite;
+  transform: rotate; 
 }
 
 .table_theme_dark
@@ -558,16 +571,18 @@ a:hover {
 
 /* RESOURCES SECTION */
 .resources {
-  margin-top: 100px;
-  display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 100px;
+  display: flex;
+  
   }
 
 
 .resources__logo-zone {
-  margin: 80px auto 217px auto;
   max-width: 1100px;
+  margin: 80px auto 217px auto;
+  
 }
 
 .resources__logo {
@@ -578,11 +593,12 @@ a:hover {
 /* FOOTER SECTION */
 
 .footer {
+  color: white;
+  background-color: #1F1F1F;	
   padding-right: 0;
   padding-left: 0; 
   min-height: 350px;
-  color: white;
-  background-color: #1F1F1F;	
+  
   }
 
 .footer__columns {

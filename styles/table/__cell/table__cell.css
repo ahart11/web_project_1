@@ -1,0 +1,9 @@
+
+@import url(_theme/table__cell_theme.css);
+.table__cell {
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+
+
