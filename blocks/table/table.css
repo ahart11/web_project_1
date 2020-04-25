@@ -1,11 +1,7 @@
-@import url(__cell/table__cell.css);
-
-
-@import url(__heading/table__heading.css);
-
-@import url(__text/table__text.css);
-
-@import url(_themel/table_theme.css);
+@import url('__cell/table__cell.css');
+@import url('__heading/table__heading.css');
+@import url('__text/table__text.css');
+@import url('_theme/table_theme.css');
 
 .table {
   width: 1100px;
@@ -16,5 +12,6 @@
   flex-wrap: wrap;  
   z-index: 2;
 }
+
 
 
