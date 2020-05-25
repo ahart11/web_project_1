@@ -2,3 +2,13 @@
    animation: rotation 20s ease infinite;
    
  }
+
+ @keyframes rotation {
+  from {
+      transform: rotate(0deg);
+  }
+
+  to {
+      transform: rotate(360deg);
+  }
+}

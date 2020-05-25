@@ -7,6 +7,7 @@
 @import url('../blocks/header/header.css');
 @import url('../blocks/kaufman/kaufman.css');
 @import url('../blocks/khan/khan.css');
+@import url('../blocks/link-transition/link-transition.css');
 @import url('../blocks/logo/logo.css');
 @import url('../blocks/oakley/oakley.css');
 @import url('../blocks/page/page.css');
@@ -20,23 +21,9 @@
 @import url('../blocks/video/video.css');
 
 
-@keyframes rotation {
-  from {
-      transform: rotate(0deg);
-  }
 
-  to {
-      transform: rotate(360deg);
-  }
-}
 
-*a {
-  transition: opacity 5s linear;
-}
 
-a:hover {
-  opacity: 0.5;
-}
 
 
 

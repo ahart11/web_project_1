@@ -6,8 +6,10 @@
 .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
   width: 80%;
   margin: 0 auto;
+  margin-right: 5px;
+  margin-top: -50px;
   
 }

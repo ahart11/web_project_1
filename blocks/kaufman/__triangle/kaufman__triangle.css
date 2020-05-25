@@ -9,5 +9,5 @@
   top: 20px;
   right: -210px;
   background-size: cover;
-  transform: rotate; 
+  transform: rotate(360deg); 
 }
