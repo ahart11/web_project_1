@@ -1,14 +1,19 @@
 
 .footer__column_content_info{
   flex-basis: auto;
-  
+  padding: 0;
 
 }
 .footer__column_content_social{
   flex-basis: auto;
   
   
+  
+  
+  
+  
 }
 .footer__column_content_copyright {
-  flex-basis: 711px;
+  flex-basis: 640px;
+  
 }
